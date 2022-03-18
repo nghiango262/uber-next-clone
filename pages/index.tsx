@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import tw from 'tailwind-styled-components'
+import Messenger from '../components/MessengerScreen'
 import Test from '../components/Test'
 
 const Home: NextPage = () => {
@@ -19,7 +20,7 @@ const Home: NextPage = () => {
         START
       </ActionItems>
 */}
-        <Test />
+      <Messenger />
     </Wrapper>  
   </>
   )

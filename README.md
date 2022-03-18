@@ -47,20 +47,51 @@ to your ./styles/globals.css file
 Tham khảo thêm tại trang: https://www.npmjs.com/package/tailwind-styled-components
 
 ## Một số kiến thức về tailwindcss
-- background:
-  + color:
-    màu nền của thẻ với các class như sau: bg-[màu]-[độ sáng cảu màu]
-    ví dụ: "bg-blue-500"
-    ngoài ra ta có thể set opacity cho bg:
-    ví dụ: "bg-opacity-500"   ---
+- Background Color:
+	```sh
+	  bg-[màu]-[độ sáng cảu màu]
+	  bg-opacity-[cấp độ trong suốt]
+	```
 
-    Tiếp theo là ta có thể set bg theo responsive
-    ví dụ: class="bg-blue-500 md:bg-green-500"
-    Tương tự cho các action như HOVER, FOCUS
+    Ví dụ: 
+		"bg-blue-500"
+     	"bg-opacity-500"
+
+    - Option for responsive
+    Ví dụ: class="bg-blue-500 md:bg-green-500"
+    Tương tự cho các action như HOVER, FOCUS:
+	Ví dụ: class="bg-blue-500 hover:bg-green-500"
     
-  + Khi scroll có một số class điều khiển cách mà background images thể hiện:
+    - Khi scroll có một số class điều khiển cách mà background images thể hiện:
   "bg-fixed": hình bg sẽ được fixed với viewport khi scroll
   "bg-local": nội dung và hình ảnh bg đều chạy khi scroll
   "bg-scroll": content scroll còn hình ảnh giữ nguyên
   Tham khảo link: https://tailwindcss.com/docs/background-attachment 
+
+   - Background-position
+   - background-repeat
+
+- BORDER class:
+```html
+
+<div class="flex h-screen align-items justify-items">
+	<div class="">
+	</div>
+</div>
+```
+
+### Responsive
+'sm'			640px		'@media (min-width: 640px) { ... }'
+'md'			768px		'@media (min-width: 768px) { ... }'
+'lg' 			1024px			'@media (min-width: 1024px) { ... }'
+'xl'			1280px		'@media (min-width: 1280px) { ... }'
+'2xl'			1536px			'@media (min-width: 1536px) { ... }'
+
+ex:
+```html
+
+	<div class="bg-blue-200 sm:bg-red-200 md:bg-yellow-300 lg:bg-green-400 xl:bg-orange-200">
+		ABC
+	</div>
+```
 
