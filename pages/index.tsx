@@ -30,7 +30,7 @@ const Wrapper = tw.div`
 bg-sky-500
 h-screen
 flex
-//flex-col
+flex-col
 items-center
 justify-center
 `
@@ -45,4 +45,4 @@ bg-red-300
 flex-1
 `
 
-export default Home
+export default Home;

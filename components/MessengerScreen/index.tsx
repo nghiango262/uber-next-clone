@@ -1,12 +1,15 @@
-
+import { Image } from "next/image";
 import tw from 'tailwind-styled-components'
-
+import Vercel from '../../public/faceicon.svg'
+import styles from '../../styles/Messenger.module.css'
 
 const Messenger: React.FC = () => {
 
   return (
     <Wrapper>
-      <Menu>Menu</Menu>
+      <Menu>
+        <Vercel className={styles.svgStyle} />
+      </Menu>
       <Content>
         <Siderbar>Sidebar</Siderbar>
         <ChatSection>
@@ -35,8 +38,9 @@ h-full
 const Menu = tw.div`
 flex
 space-between
-h-[60px]
+h-[56px]
 bg-gray-700
+items-center
 `
 // 2. Content Section
 const Content = tw.div`
